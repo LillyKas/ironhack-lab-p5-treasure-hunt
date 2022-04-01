@@ -5,6 +5,13 @@ function setup() {
   canvas.parent("canvas");
 }
 
+function preload(){
+  game.preload();
+}
+
 function draw() {
   game.drawGrid();
+  game.drawPlayer();
+  game.drawTreasure();
+  game.score()
 }
